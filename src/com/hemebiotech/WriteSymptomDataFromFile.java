@@ -21,6 +21,8 @@ public class WriteSymptomDataFromFile {
 		 * @return write liste des symthomes + occurences
 		 * 
 		 */
+		
+		
 
 		
 		Map<String, Integer>write = new HashMap();
