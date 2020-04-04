@@ -1,0 +1,1 @@
+copier la liste des symptomes dans le fichier result.txt
