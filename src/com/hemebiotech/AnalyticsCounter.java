@@ -1,29 +1,45 @@
 package com.hemebiotech;
+import org.json.simple.JSONObject;
+
 
 import java.awt.List;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.io.ObjectInputStream.GetField;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class AnalyticsCounter {
-	/*private static int headacheCount = 0;	// initialize to 0
-	private static int rashCount = 0;		// initialize to 0
-	private static int pupilCount = 0;		// initialize to 0
-*/	
+
 	
 	public static void main(String args[]) throws Exception {
 		
 		
-		ReadSymptomDataFromFile read = new ReadSymptomDataFromFile();
+		controller.executer();
 		
-		Map<String, Integer> symptome = read.getSymptoms();
 		
-		WriteSymptomDataFromFile write = new WriteSymptomDataFromFile();
-		write.transfert(symptome);
+		
+		
+		/**
+		 * Eviter les problèmes d'encodage :
+		 * Serialisation dans un fichier Json, via utilisation d'une bibliothèque
+		 * l'objet obj prend en paramettre la liste ds symptomes triées et l'enregistre dans un fichier "results.json"
+		 * 
+		 */
+//		JSONObject obj = new JSONObject(symptome);
+//		System.out.println(obj);
+//		
+//		 try (FileWriter file = new FileWriter("results.json")) {
+//			 
+//	            file.write(obj.toJSONString());
+//	            file.flush();
+//	 
+//	        } catch (IOException e) {
+//	            e.printStackTrace();
+//	        }
 		
 		
 	}

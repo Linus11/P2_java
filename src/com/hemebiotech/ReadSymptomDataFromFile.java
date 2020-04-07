@@ -29,12 +29,16 @@ import java.util.Map;
  */
 public class ReadSymptomDataFromFile implements ISymptomReader {
 
+
+	public ReadSymptomDataFromFile(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
 	/**
 	 * Récupérer le fichier de la liste des symptomes, le mettre dans une HashMap 'frequency' 
 	 * 
 	 */
 	
-
 	
 	public  Map<String, Integer> getSymptoms(){
 		/**
@@ -78,33 +82,22 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 			line = reader.readLine();
 		}
 		
-		System.out.println("SIMO" + frequency);
+		
+		
+		//System.out.println("SIMO" + frequency);
+	
+		 
 		
 		/**
-		 * Instantier un objet file, 
-		 * Indiquer le fichier de sortie dans l'attribut 'config.outOccurences'
-		 * 
-		 * @see config
+		 * Afficher la liste dans la console après tri		
 		 * 
 		 */
 		 
-		 FileOutputStream fileOut=new FileOutputStream(config.outOccurences);
-	        ObjectOutputStream out=new ObjectOutputStream(fileOut);
-	        
-
-	        out.writeObject(frequency);
-	        out.close();
-	        
-	        /**
-			 * Afficher la liste finale des sympthomes avec leur occurences dans une MapList
-			 *  
-			 */
-		 
-		 for(Map.Entry<String, Integer> items : frequency.entrySet()) {
-			 
-			System.out.println(items.getKey() + " " + items.getValue());
-			
-		 }
+//		 for(Map.Entry<String, Integer> items : frequency.entrySet()) {
+//			 
+//			System.out.println(items.getKey() + " " + items.getValue());
+//			
+//		 }
 		
 		
 		} catch (IOException e) {

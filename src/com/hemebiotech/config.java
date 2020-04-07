@@ -14,9 +14,13 @@ public class config {
 		return outputLink;
 	}
 	
+	/**
+     * Retourne le level du zéro.
+     * 
+     * Les attributs stockent les liens vers le fichier à traiter et le fichier de sortie
+     */
 	
 	public static final String inputLink = "C:/Users/Elev/eclipse-workspace-java-se/P2_java/src/symptoms.txt";
-	public static final String outOccurences = "C:/Users/Elev/eclipse-workspace-java-se/P2_java/src/occurences.out";
-	public static final String outputLink = "C:/Users/Elev/eclipse-workspace-java-se/P2_java/src/results.out"; //results.out
+	public static final String outputLink = "C:/Users/Elev/eclipse-workspace-java-se/P2_java/src/results.out"; 
 	
 }
